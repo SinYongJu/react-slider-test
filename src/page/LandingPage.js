@@ -5,6 +5,7 @@ import TitleH2 from '../components/atoms/TitleH2'
 import Header from '../components/organisms/Header'
 import Footer from '../components/organisms/Footer'
 import DescriptionP from '../components/atoms/DescriptionP'
+import SwiperSlide from '../components/organisms/SwiperSlide'
 
 const LandingPage = () => {
   const [value, actionValue ] = React.useState(true);
@@ -23,14 +24,6 @@ const LandingPage = () => {
         <Header></Header>
         <LandingTemplate>
           <TitleH2>hello</TitleH2>
-         
-          <InputTextComm
-            onClick={onInputTextCommHandleClick}
-            onChange={ononInputTextCommHandleChange}
-            InputTextCommName="input name name"
-            DescriptionPChildren="in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm"
-            ></InputTextComm>
-
           <InputTextComm
             onClick={onInputTextCommHandleClick}
             onChange={ononInputTextCommHandleChange}
@@ -38,6 +31,7 @@ const LandingPage = () => {
             DescriptionPChildren="in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm in InputTextComm"
             ></InputTextComm>
           <DescriptionP>in page desc in page desc in page desc in page desc in page desc in page desc in page desc</DescriptionP>
+          <SwiperSlide></SwiperSlide>
         </LandingTemplate>
         <Footer></Footer>
       </>
