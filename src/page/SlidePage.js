@@ -1,9 +1,12 @@
 import React from 'react';
 import SlideTemplate from './template/SlideTemplate'
+import NukaSlide from '../components/organisms/NukaSlide'
 
 const SlidePage = () => {
   return (
-    <SlideTemplate></SlideTemplate>
+    <SlideTemplate
+      slide={<NukaSlide></NukaSlide>}
+    ></SlideTemplate>
   );
 };
 
