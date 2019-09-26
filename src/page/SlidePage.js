@@ -1,9 +1,12 @@
 import React from 'react';
 import SlideTemplate from './template/SlideTemplate'
+import SlickSlide from '../components/organisms/SlickSlide'
 
 const SlidePage = () => {
   return (
-    <SlideTemplate></SlideTemplate>
+    <SlideTemplate
+      slide ={<SlickSlide></SlickSlide>} 
+    ></SlideTemplate>
   );
 };
 
