@@ -4,7 +4,6 @@ import WireFrame from '../WireFrame'
 import './LandingTemplate.scss'
 
 const LandingTemplate = ({tmplHeader,tmplBody,tmplFooter,children}) => {
-  asdas
   return (
     <div className="align_center">
      <div className="left">
