@@ -1,11 +1,21 @@
 
 import React from 'react';
+import WireFrame from '../WireFrame'
 import './LandingTemplate.scss'
 
-const LandingTemplate = ({children}) => {
+const LandingTemplate = ({tmplHeader,tmplBody,tmplFooter,children}) => {
+  
   return (
     <div className="align_center">
-      {children}
+     <div className="left">
+      {tmplHeader ? tmplHeader :  <WireFrame>header</WireFrame>}
+     </div>
+     <div className="right_overflow_hidden">
+     {tmplBody ? tmplBody : <WireFrame>body</WireFrame> }
+     </div>
+     <div>
+     {tmplFooter ? tmplFooter : <WireFrame>footer</WireFrame> }
+     </div>
     </div>
   );
 }

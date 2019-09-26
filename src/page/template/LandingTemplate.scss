@@ -1,4 +1,15 @@
 .align_center{
-  width:500px;
+  width:740px;
   margin:0 auto;
+  .left{float:left;width:200px;margin-right:10px;}
+  .right_overflow_hidden{overflow:hidden}
+  .right_overflow_hidden + div{margin-top:10px}
+  &:after{display:block;clear:both;content:''}
+
+}
+
+.align_center.pair{
+  width:780px;
+  margin:0 auto;
+  .pair{float:left;width:33.33%;box-sizing:border-box;padding:0 5px}
 }
