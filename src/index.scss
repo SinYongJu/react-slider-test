@@ -1,0 +1,21 @@
+:empty{
+  background-image :radial-gradient( circle 50px at 50px 50px, lightgray, transparent 0 ), /* 원형 */
+                    linear-gradient( lightgray 20px, transparent 0 ), /* 사각1 */
+                    linear-gradient( lightgray 20px, transparent 0 ), /* 사각2 */
+                    linear-gradient( lightgray 20px, transparent 0 ), /* 사각3 */
+                    linear-gradient( lightgray 20px, transparent 0 ); /* 사각4 */
+  background-repeat: repeat-y;
+  background-position: 
+    0 0,         /* 원형 */
+    120px 0,     /* 사각1 */
+    120px 40px,  /* 사각2 */
+    120px 80px,  /* 사각3 */
+    120px 120px; /* 사각4 */;
+  background-size:
+    100px 200px, /* 원형 */
+    150px 200px, /* 사각1 */
+    350px 200px, /* 사각2 */
+    300px 200px, /* 사각3 */
+    250px 200px; /* 사각4 */;
+}
+

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import WireFrame from '../WireFrame'
+import WireFrameComp from '../WireFrames/WireFrameComp'
 import './LandingTemplate.scss'
 
 const LandingTemplate = ({tmplHeader,tmplBody,tmplFooter,children}) => {
@@ -8,13 +8,13 @@ const LandingTemplate = ({tmplHeader,tmplBody,tmplFooter,children}) => {
   return (
     <div className="align_center">
      <div className="left">
-      {tmplHeader ? tmplHeader :  <WireFrame>header</WireFrame>}
+      {tmplHeader}
      </div>
      <div className="right_overflow_hidden">
-     {tmplBody ? tmplBody : <WireFrame>body</WireFrame> }
+     {tmplBody}
      </div>
      <div>
-     {tmplFooter ? tmplFooter : <WireFrame>footer</WireFrame> }
+     {tmplFooter}
      </div>
     </div>
   );
